@@ -59,6 +59,8 @@ XPCOMUtils.defineLazyGetter(this, "libcutils", function () {
   Cu.import("resource://gre/modules/systemlibs.js");
   return libcutils;
 });
+
+Cu.import('resource://gre/modules/SpatialNavigationB2G.jsm');
 #endif
 
 #ifdef MOZ_CAPTIVEDETECT

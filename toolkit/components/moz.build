@@ -42,6 +42,7 @@ DIRS += [
     'protobuf',
     'reader',
     'reflect',
+    'spatialnavigation',
     'sqlite',
     'startup',
     'statusfilter',

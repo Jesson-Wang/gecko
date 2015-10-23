@@ -1128,3 +1128,13 @@ pref("gfx.vsync.refreshdriver", false);
 
 // Enable mozKillSwitch API on v2.2r
 pref("dom.mozKillSwitch.enabled", true);
+
+// Enable snav
+pref("snav.enabled", true);
+pref("snav.loglevel", "error");
+
+pref("snav.addon.baseURI", "resource://spatialnavigation/addons");
+
+pref("snav.style.author", true);
+
+pref("snav.allow.touchevent", true);

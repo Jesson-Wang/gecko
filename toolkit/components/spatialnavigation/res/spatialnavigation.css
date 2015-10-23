@@ -1,0 +1,40 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@namespace url("http://www.w3.org/1999/xhtml");
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+:root {
+  --focus-box-color: #0F0;
+  --focus-outline-color: red;
+
+  --focus-box-shadow: 0px 0px 0px 2px var(--focus-box-color) inset;
+  --focus-outline: 2px solid var(--focus-outline-color);
+}
+
+:-moz-focusring:not(input):not(iframe):not(frame):not(body):not(html):not(video) {
+  outline: var(--focus-outline);
+  box-shadow: var(--focus-box-shadow);
+}
+
+video:not(:-moz-full-screen):-moz-focusring {
+  outline: var(--focus-outline);
+  box-shadow: var(--focus-box-shadow);
+}
+
+xul|box.backgroundBar:-moz-focusring,
+xul|button:-moz-focusring
+{
+  outline: var(--focus-outline);
+  box-shadow: var(--focus-box-shadow);
+}
+
+
+input:-moz-focusring:not([type=range]),
+input[type=range]:-moz-focusring:not(:active),
+input[type=range]:-moz-focusring:active::-moz-range-thumb
+{
+  outline: var(--focus-outline);
+  box-shadow: var(--focus-box-shadow);
+}
